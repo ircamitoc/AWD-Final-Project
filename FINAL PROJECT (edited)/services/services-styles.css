@@ -1,0 +1,424 @@
+/*MAIN CSS*/
+
+
+/*FONTS*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro&family=Lobster&family=Playfair+Display:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap");
+
+/*Code to change color of active link*/
+
+.navbar-item>.active>a {
+    color: rgb(55, 146, 55);
+}
+
+.active {
+    font-weight: bold;
+}
+
+body {
+    background-color: #ffe8d6;
+    color: #6b705c;
+}
+
+.navbar-custom {
+    background-color: #a5a58d;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    font-family: "Lobster", cursive;
+    font-size: 25px;
+}
+
+.button-design {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+.button-design:hover {
+    background-color: #ffe8d6;
+    color: #a5a58d;
+    border: 2px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*ORDER FORM CSS*/
+
+.order-form .container {
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.order-form-label {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-form-input {
+    width: 100%;
+    padding: 8px 8px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 3px !important;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    color: black;
+}
+
+.btn-submit:hover {
+    background-color: #6b705c !important;
+}
+
+#date {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.page-font {
+    font-family: "Castoro", serif;
+}
+
+
+/*ABOUT CSS*/
+
+
+/*CONTACT CSS*/
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#myBtn {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+#ok {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+    margin-left: 110px;
+}
+
+
+/*SERVICES CSS*/
+
+
+/*PRINT, INK, AND BINDING CSS*/
+
+.section-services {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.section-services .header-section {
+    margin-bottom: 35px;
+}
+
+.section-services .header-section .title {
+    position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.section-services .header-section .title:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #6B705C;
+    border-radius: 3px;
+}
+
+.section-services .header-section .title-desc {
+    font-size: 19px;
+    color: #6B705C;
+}
+
+.section-services .single-service {
+    position: relative;
+    margin-top: 30px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.section-services .single-service .content {
+    position: relative;
+    z-index: 20;
+}
+
+.section-services .single-service .icon img {
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 120px;
+    height: 70px;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.section-services .single-service .icon-logo img {
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.section-services .single-service .title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.section-services .single-service .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.section-services .single-service a {
+    position: relative;
+    font-size: 18px;
+    color: #6B705C;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.section-services .single-service a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #6B705C;
+}
+
+.section-services .single-service a:hover {
+    color: black;
+    transition: 0.25s ease-in;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.single-service:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    }
+}
+
+.single-service img:hover {
+    animation: shadow-pulse 1.25s;
+}
+
+
+/*END OF PRINT, INK, AND BINDING CSS*/
+
+
+/*SERVICES CSS*/
+
+
+/*LAMINATING AND CUTTING CSS*/
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain-service {
+    width: 90%;
+    max-width: 1000vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img {
+    width: 100%;
+    height: 550px;
+    background: no-repeat center / cover;
+    border-radius: 8px;
+}
+
+.right {
+    width: 50%;
+    min-height: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: #6B705C;
+    margin-left: -150px;
+}
+
+.right h1 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.right p {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #6B705C;
+    color: #fff;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.right a:hover {
+    background-color: black;
+    transition: 0.25s ease-in;
+}
+
+@media only screen and (max-width: 768px) {
+    .contain-service {
+        flex-direction: column;
+        width: 100%;
+        margin: 30px 20px;
+    }
+    .left img {
+        width: 100%;
+        height: 400px;
+    }
+    .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contain-service {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 10px;
+    }
+    .left img {
+        width: 100%;
+        height: 200px;
+    }
+    .right {
+        width: 90%;
+        margin: 0;
+        margin-top: -100px;
+    }
+}
+
+.left:hover {
+    box-shadow: 0 0 30px rgba(33, 33, 33, .2);
+}
+
+.right:hover {
+    box-shadow: 0 0 30px rgba(33, 33, 33, .2);
+}
+
+
+/*END OF LAMINATING AND CUTTING CSS*/
+
+
+/*SERVICES CSS*/
+
+
+/*PAGE TRANSITION*/
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-30deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+#MAIN {
+    animation: transitionIn 0.75s;
+}
+
+
+/*END OF PAGE TRANSITION*/

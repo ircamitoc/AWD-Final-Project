@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!--LOBSTER FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--PLAYFAIR FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <!--CASTORO FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+
+
+    <title> Vitaly Tea - Menu </title>
+    <!--LOGO-->
+    <link href="https://drive.google.com/thumbnail?id=1n5zlHanUdYHBU_sd1VOkfaa1Euyn_lgO" rel="icon">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!--JAVASCRIPTS-->
+    <script type="text/javascript">
+        function myFunction() {
+            if (document.getElementById("MAIN").style.backgroundColor == "rgb(255, 232, 214)") {
+                // CONVERT "MAIN" DIV TO DARK MODE
+                document.getElementById("MAIN").style.color = "#ffe8d6";
+                document.getElementById("MAIN").style.backgroundColor = "#6b705c";
+
+                // CONVERT NAVBAR TO DARK MODE
+                document.getElementsByClassName("navbar")[0].style.backgroundColor = "#b7b7a4";
+            } else {
+                // CONVERT "MAIN" DIV TO LIGHT MODE
+                document.getElementById("MAIN").style.color = "#6b705c";
+                document.getElementById("MAIN").style.backgroundColor = "#ffe8d6";
+
+                // CONVERT NAVBAR TO LIGHT MODE
+                document.getElementsByClassName("navbar")[0].style.backgroundColor = "#a5a58d";
+            }
+        }
+    </script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="menu/menu-styles.css">
+    <!---FOR CAROUSEL-->
+    <link rel="stylesheet" href="menu/owl-carousel.css">
+    <!--responsive carousel-->
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+    <div class="NAVIGATION-BAR">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="tea-logo.ico" style="width: 55px; height: 50px; margin-right: 5px"> <span class="align-middle" style="font-size: 30px;">Vitaly Tea</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars" style = "color: white"></i>
+                  </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--DIFFERENT PAGES-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!--HOME-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                        font-family: 'Playfair Display', serif;">Home</a>
+                        </li>
+                        <!--SERVICES-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                        font-family: 'Playfair Display', serif;">Services</a>
+                            <!--Different services available-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="services-digital-print.html">Digital Printing</a></li>
+                                <li><a class="dropdown-item" href="services-ink.html">Ink</a></li>
+                                <li><a class="dropdown-item" href="services-binding.html">Binding</a></li>
+                                <li><a class="dropdown-item" href="services-laminating.html">Laminating</a></li>
+                                <li><a class="dropdown-item" href="services-cutting.html">Cutting</a></li>
+                            </ul>
+                        </li>
+                        <!--MENU-->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="menu.html" style="color: rgb(255, 255, 255); font-family: 'Lobster', cursive;
+                        font-family: 'Playfair Display', serif;">Menu</a>
+                        </li>
+                        <!--ORDER-->
+                        <li class="nav-item">
+                            <div class="color">
+                                <a class="nav-link active" aria-current="page" href="order.html" style="color: #ffe8d6; font-family: 'Lobster', cursive;
+                        font-family: 'Playfair Display', serif; ">Order </a></div>
+                        </li>
+                        <!--ABOUT-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                        font-family: 'Playfair Display', serif;">About</a>
+                        </li>
+                        <!--CONTACT-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                        font-family: 'Playfair Display', serif;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--SPECIFIC PAGE TASK-->
+    <!--MENU PAGE (put your codes here)-->
+
+
+    <div id="MAIN" style="background-color: rgb(255, 232, 214)">
+        <div class="page-font">
+            <div class="container pt-4">
+                <div class="row">
+                    <!--TITLE and OBJECTIVE-->
+                    <div class="col-12">
+                        <h1><i><b>VITALY-TEA MENU</b></i></h1>
+                        <span>Welcome to our menu, Enjoy what we are offering to your heart's content.</span>
+                        <hr class="mt-1">
+                        <!--FOR CHANGING COLOR MODE BUTTON-->
+                        <button onclick="myFunction()" class="button-design">Change color mode</button>
+                    </div>
+
+                    <!----------------------------------------WARMDRINKS-SECTION------------------------------>
+                    <section class="warmdrinks-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="warmdrinks-menu-content">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="left-image">
+                                                    <img src="menu/menu-images/w_menu.png" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-7">
+                                                <h2>Hot Beverages</h2>
+                                                <div id="owl-breakfast" class="owl-carousel owl-theme">
+                                                    <!--drink1-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1hVRv5f-AIEfyO85quXK-pFLHL-pSRW7p" alt="">
+                                                            <div class="price">₱150</div>
+                                                            <div class="text-content">
+                                                                <h4>Cafe Latte</h4>
+                                                                <p>Traditional espresso with textured milk ('latte' means milk) and a delicate layer of milk crema on top.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink1-->
+
+                                                    <!--drink2-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1mkkqL4akVdoHguO_SGTRwl2KvpC2hvFW" alt="">
+                                                            <div class="price">₱200</div>
+                                                            <div class="text-content">
+                                                                <h4>Long Black</h4>
+                                                                <p>A classic long black coffee with Vitaly Tea’s Signature Blend.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink2-->
+
+
+                                                    <!--drink3-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1XGerxQvd4ynFyHXnJKQkCm_8OZ2eTnCJ" alt="">
+                                                            <div class="price">₱80</div>
+                                                            <div class="text-content">
+                                                                <h4>Classic Hot Choco</h4>
+                                                                <p>A cup of indulgence. Enjoy the richest,creamiest chocolate delight that you can have with or without marshmallows.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink3-->
+
+                                                    <!--drink4-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1gV8t8xA7f10nsL69EjjKZI3ERBYpxIcM" alt="">
+                                                            <div class="price">₱150</div>
+                                                            <div class="text-content">
+                                                                <h4>Macchiato</h4>
+                                                                <p>A classic short black espresso with a dollop of milk crema to make the smoothest short black even smoother.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink4-->
+
+                                                    <!--drink5-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=11A4oQgiwrfAuyYPFGgbGiVOrdhOFFUkv" alt="">
+                                                            <div class="price">₱100</div>
+                                                            <div class="text-content">
+                                                                <h4>Double “T” Tea</h4>
+                                                                <p>Beautifully blended 2 types of Tea's ranging from English Breakfast, Earl Grey Tea, Just Peppermint Tea, Just Chamomile, and a Sencha Tea.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink5-->
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!----------------------------------------END-OF-WARMDRINKS-SECTION----------------------------->
+
+
+
+                    <!----------------------------------------COLDDRINKS-SECTION------------------------------>
+                    <section class="colddrinks-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="colddrinks-menu-content">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h2>Cold Beverages</h2>
+                                                <div id="owl-lunch" class="owl-carousel owl-theme">
+
+                                                    <!--drink1-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1V_HWEB2G84joUQ32AeVnteDaNugAu7li" alt="">
+                                                            <div class="price">₱100</div>
+                                                            <div class="text-content">
+                                                                <h4>Classic Bottomless Iced Tea</h4>
+                                                                <p>Attention all Iced Tea lovers! Enjoy our refreshing flavors of peach, lemon & mint and feijoa & lime.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink1-->
+
+                                                    <!--drink2-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1hmeZNKgwgsPGwdx3Oy_muQeyQ_tpf2Md" alt="">
+                                                            <div class="price">₱185</div>
+                                                            <div class="text-content">
+                                                                <h4>Vanilla Sweet Cream Cold Brew</h4>
+                                                                <p>Try our devilishly delicious iced coffee - a mix of Vitaly Tea’s Signature Blend coffee,icy cold milk and vanilla</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink2-->
+
+                                                    <!--drink3-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1ZS1r-yQeZaJDTtwXAA8uz8wVzlAQNRx9" alt="">
+                                                            <div class="price">₱165</div>
+                                                            <div class="text-content">
+                                                                <h4>The GrandBerry Smoothie</h4>
+                                                                <p>A grand combination of raspberry, blueberry, strawberry, blackberry, greek yogurt, apple juice that will certainly give your taste buds a BLAST</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink3-->
+
+                                                    <!--drink4-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1Mv1vA7LdrVg6QjB1MlSmJLrRZrBdA1-F" alt="">
+                                                            <div class="price">₱50</div>
+                                                            <div class="text-content">
+                                                                <h4>Classic Soda Choice</h4>
+                                                                <p>Take a pick of your classic soda preference. From Classic Coke, Pepsi, Mountain Dew, Royal, Sprite and Rootbeer!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink4-->
+
+                                                    <!--drink5-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1taTAHWGLuOlHbWt7jE9Ug1yERg2SVi81" alt="">
+                                                            <div class="price">₱180</div>
+                                                            <div class="text-content">
+                                                                <h4>Dragon Drink</h4>
+                                                                <p>This tropical-inspired pick-me-up crafted with a refreshing combination of sweet mango and dragonfruit flavor.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink5-->
+
+                                                    <!--drink6-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1-4f4XRobFlYHvkxtoq7xGdkdZkiIR037" alt="">
+                                                            <div class="price">₱70</div>
+                                                            <div class="text-content">
+                                                                <h4>The OG OJ</h4>
+                                                                <p>With oranges as orange as the sunset, for all you original orange juice lovers out there. Get a taste of this.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink6-->
+
+                                                    <!--drink7-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1L2gi8SH8-Y1i-q2qFA6ldMg4D2l2LHrj" alt="">
+                                                            <div class="price">₱100</div>
+                                                            <div class="text-content">
+                                                                <h4>Drink In Pink</h4>
+                                                                <p>Fresh Strawberries with its accents of passion fruit, is combined with creamy coconutmilk. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--drink7-->
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="left-image">
+                                                    <img src="menu/menu-images/c_menu.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!----------------------------------------END-OF-COLDDRINKS-SECTION----------------------------->
+
+                    <!----------------------------------------SANDWICHES-SECTION----------------------------->
+
+                    <section class="sandwich-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="sandwich-menu-content">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="left-image">
+                                                    <img src="menu/menu-images/s_menu.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <h2>Sandwiches</h2>
+                                                <div id="owl-dinner" class="owl-carousel owl-theme">
+
+                                                    <!--SANDWICH1-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1NjDt8hKG5YBZwKe4x4siJrFEUDj8lf89" alt="">
+                                                            <div class="price">₱250</div>
+                                                            <div class="text-content">
+                                                                <h4>Döner Kebab Sandwich</h4>
+                                                                <p>Brought by Middle Eastern flavors and forms. The Döner Kebab Sandwich offers juicy, tender beef or lamb cooked on a vertical spit, then sliced thinly.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH1-->
+
+                                                    <!--SANDWICH2-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1CCw7U0PJhfjruwHOAqlCa0VmCDt1R6OK" alt="">
+                                                            <div class="price">₱350</div>
+                                                            <div class="text-content">
+                                                                <h4>The Steak</h4>
+                                                                <p>Satisfying, substantial and flavorful are three qualities that Vitaly Tea’s steak sandwich will surely provide.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH2-->
+
+                                                    <!--SANDWICH3-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1XagEeDWDl8NeyF7edy-7xfqrnGfv5HfY" alt="">
+                                                            <div class="price">₱150</div>
+                                                            <div class="text-content">
+                                                                <h4>The Sando Katsu</h4>
+                                                                <p>With Vitaly Tea’s katsu sandwich, its Pillowy white sandwich bread slathered with sweet-savory tonkatsu sauce houses breaded pork cutlets.Get a taste of Japan.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH3-->
+
+                                                    <!--SANDWICH4-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1HOUrr0s6IQUZC9DOQ1mrTMEkwfyKB0sn" alt="">
+                                                            <div class="price">₱300</div>
+                                                            <div class="text-content">
+                                                                <h4>Triple Seafood Combi Roll</h4>
+                                                                <p>Lobster,Shrimp & Clam combination sandwich. With this seafood mix in a roll what can go wrong.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH4-->
+
+                                                    <!--SANDWICH5-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1ujVgyqB7HgtTUKfOP9VIJvJIRdDFtYCn" alt="">
+                                                            <div class="price">₱150</div>
+                                                            <div class="text-content">
+                                                                <h4>Classic BLT</h4>
+                                                                <p>Bacon,Lettuce,Tomato fusion in your area!Best-Seller!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH5-->
+
+                                                    <!--SANDWICH6-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1C7UKtDkmfSYM7CrlPnpcJQMpcBAJtXi5" alt="">
+                                                            <div class="price">₱380</div>
+                                                            <div class="text-content">
+                                                                <h4>The Ham Triple Decker</h4>
+                                                                <p>The Ham Meat Skyscraper of sandwiches</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH6-->
+
+                                                    <!--SANDWICH7-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1YhAMMribn3ASOmIUZa9c1d0Zib7lgScX" alt="">
+                                                            <div class="price">₱280</div>
+                                                            <div class="text-content">
+                                                                <h4>Waffle Sandwich w/Cecina,Avocado & Arugula</h4>
+                                                                <p>Gooey cheese, salty cured meat, and avocado are pressed between crispy waffles that will make you feel like you’re in a modern cafe in Paris.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH7-->
+
+                                                    <!--SANDWICH8-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1KfJqX4QcEGkpXdaGJwrnu2DGPCC84Bof" alt="">
+                                                            <div class="price">₱150</div>
+                                                            <div class="text-content">
+                                                                <h4>Toasted Bread of Eggs,Shrimp and Tomatoes</h4>
+                                                                <p>A riot of colors and flavors. A Vitaly-Tea Best Seller</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH8-->
+
+
+                                                    <!--SANDWICH9-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1i75S-EQN2XILTwbFJzI74zoB-G-LM2Y2" alt="">
+                                                            <div class="price">₱180</div>
+                                                            <div class="text-content">
+                                                                <h4>Picchiapò</h4>
+                                                                <p>Beloved throughout modern trattorias and osterias in Rome, this simple, rustic dish of shredded beef braised in tomatoes and onions make a great stew and a fantastic sandwich filling</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH9-->
+
+                                                    <!--SANDWICH10-->
+                                                    <div class="item col-md-12">
+                                                        <div class="food-item">
+                                                            <img src="https://drive.google.com/thumbnail?id=1BL1IqBKtTYiivZZkpToOaqeczzV1AOiP" alt="">
+                                                            <div class="price">₱300</div>
+                                                            <div class="text-content">
+                                                                <h4>Softshell Crab Sandwich with Collard Slaw</h4>
+                                                                <p>A crisp collard slaw and tangy tartar and cocktail sauces top pan-fried softshell crabs in this classic sandwich.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--SANDWICH10-->
+
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--------------------------------------END-OF-SANDWICHES-SECTION----------------------------->
+
+                </div>
+            </div>
+
+            <!--forimages&browsercompatibility&owl-carousel-->
+            <script>
+                window.jQuery || document.write('<script src="menu/jquery-1.11.2.min.js"><\/script>')
+            </script>
+            <script src="menu/plugins.js"></script>
+            <script src="menu/menu.js"></script>
+            <!---------------------------------->
+
+            <!--FOOTER-->
+            <hr>
+            <footer class="footer text-faded text-center py-5">
+                <div class="container">
+                    <p class="m-0 small">©2021 Copyright Vitaly-Tea. All Rights Reserved</p>
+                </div>
+            </footer>
+
+            <!--DO NOT REMOVE. THIS IS FOR NAVBAR-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        </div>
+    </div>
+</body>

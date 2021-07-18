@@ -1,0 +1,278 @@
+/*MAIN CSS*/
+
+
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Lobster&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
+
+/*Code to change color of active link*/
+
+.navbar-item>.active>a {
+    color: rgb(55, 146, 55);
+}
+
+.active {
+    font-weight: bold;
+}
+
+body {
+    background-color: #ffe8d6;
+    color: #6b705c;
+}
+
+.navbar-custom {
+    background-color: #a5a58d;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.button-design {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+.button-design:hover {
+    background-color: #ffe8d6;
+    color: #a5a58d;
+    border: 2px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+section.warmdrinks-menu {
+    margin-top: 100px;
+}
+
+section.warmdrinks-menu .price {
+    right: 20px;
+}
+
+.warmdrinks-menu-content {
+    width: auto;
+    padding: 30px 0px 30px 30px;
+}
+
+.warmdrinks-menu-content .left-image img {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.warmdrinks-menu-content .left-image {
+    margin: -30px 0px -30px -30px;
+}
+
+.warmdrinks-menu-content #owl-breakfast {
+    margin-left: -15px;
+}
+
+.warmdrinks-menu-content h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    width: 94.5%;
+    border-bottom: 1px solid #cb997e;
+}
+
+
+/*WARM-DRINKS-SECTION*/
+
+
+/*COLD-DRINKS-SECTION*/
+
+section.colddrinks-menu {
+    margin-top: 100px;
+}
+
+section.colddrinks-menu .price {
+    right: 20px;
+}
+
+.colddrinks-menu-content {
+    font-family: 'Playfair Display', serif;
+    padding: 30px 0px 30px 30px;
+}
+
+.colddrinks-menu-content .left-image img {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+.colddrinks-menu-content .left-image {
+    margin: -30px 0px -30px -30px;
+}
+
+.colddrinks-menu-content #owl-lunch {
+    margin-left: -15px;
+}
+
+.colddrinks-menu-content h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    width: 94.5%;
+    border-bottom: 1px solid #cb997e;
+}
+
+
+/*COLD-DRINKS-SECTION*/
+
+
+/*SANDWICHES-SECTION*/
+
+section.sandwich-menu {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+section.sandwich-menu .price {
+    right: 20px;
+}
+
+.sandwich-menu-content {
+    padding: 30px 0px 30px 30px;
+}
+
+.sandwich-menu-content .left-image img {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sandwich-menu-content .left-image {
+    margin: -30px 0px -30px -30px;
+}
+
+.sandwich-menu-content #owl-dinner {
+    margin-left: -15px;
+}
+
+.sandwich-menu-content h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    width: 94.5%;
+    border-bottom: 1px solid #cb997e;
+}
+
+
+/*SANDWICHES-SECTION*/
+
+
+/*CAROUSEL*/
+
+.owl-pagination {
+    margin-top: 15px;
+    opacity: 1;
+    display: inline-block;
+}
+
+.owl-page span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 0px 5px;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #cb997e;
+}
+
+
+/*CAROUSEL*/
+
+
+/*MENU-CONTENT-SECTION*/
+
+.food-item {
+    padding: 30px;
+}
+
+.food-item h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    width: 100%;
+    border-bottom: 1px;
+}
+
+.food-item img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.food-item .price {
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+    color: #6b705c;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 8px 14px;
+    position: absolute;
+    right: 45px;
+    margin-top: -40px;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
+.food-item {
+    padding: 20px 20px 10px 20px;
+}
+
+.food-item h4 {
+    margin-top: 0px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+.page-font {
+    font-family: 'Castoro', serif;
+}
+
+
+/*MENU-CONTENT-SECTION*/
+
+
+/*END-OF-MENU-CSS*/
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-30deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+#MAIN {
+    animation: transitionIn 0.95s;
+}

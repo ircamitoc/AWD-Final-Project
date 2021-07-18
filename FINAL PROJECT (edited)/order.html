@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!--LOBSTER FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--PLAYFAIR FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <!--CASTORO FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+
+
+    <title> Vitaly Tea </title>
+    <!--LOGO-->
+    <link href="https://drive.google.com/thumbnail?id=1n5zlHanUdYHBU_sd1VOkfaa1Euyn_lgO" rel="icon">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <!--JAVASCRIPTS-->
+    <script src="order/orderform.js"></script>
+
+    <!--Chinging color mode JS-->
+    <script type="text/javascript">
+        function myFunction() {
+            if (document.getElementById("MAIN").style.backgroundColor == "rgb(255, 232, 214)") {
+                // CONVERT "MAIN" DIV TO DARK MODE
+                document.getElementById("MAIN").style.color = "#ffe8d6";
+                document.getElementById("MAIN").style.backgroundColor = "#6b705c";
+                document.getElementById("title").style.backgroundColor = "#ffe8d6";
+                document.getElementById("title2").style.backgroundColor = "#ffe8d6";
+                document.getElementById("title3").style.backgroundColor = "#ffe8d6";
+                document.getElementById("title").style.color = "#6b705c";
+                document.getElementById("title2").style.color = "#6b705c";
+                document.getElementById("title3").style.color = "#6b705c";
+                document.getElementById("instruction").style.boxShadow = "-5px 5px #ffe8d6";
+                document.getElementById("h2").style.color = "#f7f0eb";
+                document.getElementById("h2-2").style.color = "#f7f0eb";
+
+                // CONVERT NAVBAR TO DARK MODE
+                document.getElementsByClassName("navbar")[0].style.backgroundColor = "#b7b7a4";
+            } else {
+                // CONVERT "MAIN" DIV TO LIGHT MODE
+                document.getElementById("MAIN").style.color = "#6b705c";
+                document.getElementById("MAIN").style.backgroundColor = "#ffe8d6";
+                document.getElementById("title").style.backgroundColor = "#6b705c";
+                document.getElementById("title2").style.backgroundColor = "#6b705c";
+                document.getElementById("title3").style.backgroundColor = "#6b705c";
+                document.getElementById("title").style.color = "#ffe8d6";
+                document.getElementById("title2").style.color = "#ffe8d6";
+                document.getElementById("title3").style.color = "#ffe8d6";
+                document.getElementById("instruction").style.boxShadow = "-5px 5px #6b705c";
+                document.getElementById("h2").style.color = "rgb(88, 88, 82)";
+                document.getElementById("h2-2").style.color = "rgb(88, 88, 82)";
+
+                // CONVERT NAVBAR TO LIGHT MODE
+                document.getElementsByClassName("navbar")[0].style.backgroundColor = "#a5a58d";
+            }
+        }
+    </script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="order/order-styles.css">
+</head>
+
+<body style="max-width: 100%">
+    <!--NAVIGATION BAR-->
+    <div class="NAVIGATION-BAR">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="tea-logo.ico" style="width: 55px; height: 50px; margin-right: 5px"> <span class="align-middle" style="font-size: 30px;">Vitaly Tea</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" style = "color: white"></i>
+                      </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--DIFFERENT PAGES-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!--HOME-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                            font-family: 'Playfair Display', serif;">Home</a>
+                        </li>
+                        <!--SERVICES-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                            font-family: 'Playfair Display', serif;">Services</a>
+                            <!--Different services available-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="services-digital-print.html">Digital Printing</a></li>
+                                <li><a class="dropdown-item" href="services-ink.html">Ink</a></li>
+                                <li><a class="dropdown-item" href="services-binding.html">Binding</a></li>
+                                <li><a class="dropdown-item" href="services-laminating.html">Laminating</a></li>
+                                <li><a class="dropdown-item" href="services-cutting.html">Cutting</a></li>
+                            </ul>
+                        </li>
+                        <!--MENU-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                            font-family: 'Playfair Display', serif;">Menu</a>
+                        </li>
+                        <!--ORDER-->
+                        <li class="nav-item">
+                            <div class="color">
+                                <a class="nav-link active" aria-current="page" href="order.html" style="color: rgb(255, 255, 255); font-family: 'Lobster', cursive;
+                            font-family: 'Playfair Display', serif; ">Order </a></div>
+                        </li>
+                        <!--ABOUT-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                            font-family: 'Playfair Display', serif;">About</a>
+                        </li>
+                        <!--CONTACT-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" style="color:#ffe8d6; font-family: 'Lobster', cursive;
+                            font-family: 'Playfair Display', serif;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--SPECIFIC PAGE TASK-->
+    <!--ORDER FORM-->
+    <div id="MAIN" style="min-width: 600px; background-color: rgb(255, 232, 214)">
+        <div class="page-font">
+            <div class="container pt-4">
+                <div class="row">
+                    <!--TITLE and OBJECTIVE-->
+                    <div class="col-12">
+                        <h1><i><b>VITALY-TEA ORDER FORM</b></i></h1>
+                        <span>Hi V-Tea Customer! Order anything to receive high quality services and delicious foods.</span>
+                        <hr class="mt-1">
+                        <button onclick="myFunction()" class="button-design grow">Change color mode</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--DATE TODAY-->
+                    <div class="col-12">
+                        <div class="row">
+                            <h2 style="color: rgb(88, 88, 82)" id="h2">PERSONAL INFORMATION</h2>
+                        </div>
+                        <div class="row mt-3 mx-4">
+                            <div class="col-12">
+                                <label class="order-form-label" for="date-picker-example" style="margin-bottom: 5px">Date </label>
+                            </div>
+                            <div class="col-12">
+                                <div style=" margin-left: 20px"><span id='date-time'></div></span>
+                                    <script>
+                                        var dt = new Date();
+                                        document.getElementById('date-time').innerHTML = dt;
+                                    </script>
+                                </div>
+                            </div>
+
+                            <!--NAME-->
+                            <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+                                <div class="row mx-4">
+                                    <div class="col-12 mb-2">
+                                        <label class="order-form-label">Name</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="order-form-input" placeholder="Full name" id="name" style="margin-top: 0px;" />
+                                    </div>
+                                </div>
+
+                                <!--CONTACT NUMBER-->
+                                <div class="row mx-4">
+                                    <div class="col-12">
+                                        <label class="order-form-label" style="margin-bottom: 5px;">Contact Number <i>(optional)</i></label>
+                                    </div>
+                                    <div class="col-12">
+                                        <input class="order-form-input" placeholder="Contact Number" style="margin-bottom: 20px;" id="contactNum">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h2 style="color: rgb(88, 88, 82)" id="h2-2">ORDER</h2>
+                                </div>
+
+                                <!--ORDER PART-->
+                                <!--SERVICES-->
+                                <div class="row mt-3 mx-4" style="min-width: 600px">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="row">
+                                                <label class="order-form-label" id="title" style="background-color: #6b705c; color: #ffe8d6; text-align: center; margin-top: 0px; font-family: 'Lobster', cursive; font-size:30px; font-weight: normal">Services</label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="row" style="margin: 10px 0 0 0; font-weight: bold; font-size: 25px; text-decoration: underline;">DIGITAL PRINTING</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="row" style="margin: 15px 0 0 0; font-style: italic; font-size: 25px; margin-top: 2px;">Paper Stock:</div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="row check" style="margin: 18px 0 0 0; font-style: italic; font-size: 20px; margin-top: 2px; margin-left: 10px;">Glossy</div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Black&White-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="glossy1Checkbox" value="Black&White" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="glossy1Checkbox" class="check">Black & White - P25/page </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity1G">
+                                                            <p id="text1G" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity1G" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Colored-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="glossy2Checkbox" value="Colored" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="glossy2Checkbox" class="check">Colored - P30/page </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity2G">
+                                                            <p id="text2G" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity2G" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="row check" style="margin: 18px 0 0 0; font-style: italic; font-size: 20px; margin-top: 2px; margin-left: 10px;">Matte</div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Black&White-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="matte1Checkbox" value="Black&White" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="matte1Checkbox" class="check">Black & White - P30/page</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity1M">
+                                                            <p id="text1M" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity1M" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Colored-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="matte2Checkbox" value="Colored" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="matte2Checkbox" class="check">Colored - P35/page </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity2M">
+                                                            <p id="text2M" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity2M" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="row check" style="margin: 18px 0 0 0; font-style: italic; font-size: 20px; margin-top: 2px; margin-left: 10px;">Textured</div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Black&White-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="textured1Checkbox" value="Black&White" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="textured1Checkbox" class="check">Black & White - P45/page </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity1T">
+                                                            <p id="text1T" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity1T" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Colored-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="textured2Checkbox" value="Colored" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="textured2Checkbox" class="check">Colored - P50/page </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity2T">
+                                                            <p id="text2T" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity2T" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="row" style="margin: 15px 0 0 0; font-style: italic; font-size: 25px">Ink:</div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Hewlett Packard-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="ink1Checkbox" value="Hewlett Packard" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="ink1Checkbox" class="check">Hewlett Packard</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity1I">
+                                                            <p id="text4" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity1I" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Epson-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="ink2Checkbox" value="Epson" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="ink2Checkbox" class="check">Epson </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity2I">
+                                                            <p id="text5" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity2I" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Canon-->
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="ink3Checkbox" value="Canon" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="ink3Checkbox" class="check">Canon</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity3I">
+                                                            <p id="text6" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity3I" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--BINDING-->
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="row" style="margin: 10px 0 0 0; font-weight: bold; font-size: 25px; text-decoration: underline;">BINDING</div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Saddle Stitch-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="B1Checkbox" onclick="displayQtyInput(this)" value="SaddleStitch" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="B1Checkbox" class="check">Saddle Stitch - P35/book</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity1B">
+                                                            <p id="text7" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity1B" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Heated Spine-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="B2Checkbox" value="HeatedSpine" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="B2Checkbox" class="check">Heated Spine - P60/book</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity2B">
+                                                            <p id="text8" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity2B" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Wire-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="B3Checkbox" value="Wire" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="B3Checkbox" class="check">Wire - P40/book</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity3B">
+                                                            <p id="text9" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity3B" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--LAMINATING-->
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="row" style="margin: 10px 0 0 0; font-weight: bold; font-size: 25px; text-decoration: underline;">LAMINATING</div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--ID-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="IDCheckbox" onclick="displayQtyInput(this)" value="ID" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="IDCheckbox" class="check">ID size - P15</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantityID">
+                                                            <p id="text10" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantityID" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--3R-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="3RCheckbox" value="3R" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="3RCheckbox" class="check">3R size - P25</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity3R">
+                                                            <p id="text11" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity3R" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--4R-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="4RCheckbox" value="4R" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="4RCheckbox" class="check">4R size- P30</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity4R">
+                                                            <p id="text12" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity4R" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--A4-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="A4Checkbox" value="A4" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="A4Checkbox" class="check">A4 size - P60</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantityA4">
+                                                            <p id="text13" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantityA4" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Letter-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="LetterCheckbox" value="Letter" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="LetterCheckbox" class="check">Letter size - P60</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantityLetter">
+                                                            <p id="text14" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantityLetter" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF SERVICES -->
+
+
+                                <!-- MENU -->
+                                <div class="row mt-3 mx-4" style="min-width: 600px">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="row">
+                                                <label class="order-form-label" id="title2" style="background-color: #6b705c; color: #ffe8d6; text-align: center; margin-top: 0px; font-family: 'Lobster', cursive; font-size:30px; font-weight: normal">Foods & Drinks Menu</label>
+                                            </div>
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="row" style="margin: 10px 0 0 0; font-weight: bold; font-size: 25px; text-decoration: underline;">WARM DRINKS</div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <!--Cafe Latte-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="latteCheckbox" value="CafeLatte" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="latteCheckbox" class="check"> Cafe Latte - ₱150 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity1">
+                                                            <p id="text15" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity1" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Long Black-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="blackCheckbox" value="LongBlack" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="blackCheckbox" class="check">Long Black - ₱200 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity2">
+                                                            <p id="text16" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity2" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Classic Hot Choco-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="hotchocoCheckbox" value="HotChoco" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="hotchocoCheckbox" class="check">Classic Hot Choco - ₱80 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity3">
+                                                            <p id="text17" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity3" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Macchiato-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="MacchiatoCheckbox" value="Macchiato" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="MacchiatoCheckbox" class="check">Macchiato - ₱150 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity4">
+                                                            <p id="text18" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity4" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Classic Hot Choco-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="teaCheckbox" value="Tea" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="teaCheckbox" class="check">Double “T” Tea - ₱100 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity5">
+                                                            <p id="text19" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity5" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="row" style="margin: 10px 0 0 0; font-weight: bold; font-size: 25px; text-decoration: underline;"> COLD DRINKS</div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <!--Classic Bottomless Iced Tea-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="icedteaCheckbox" value="Iced Tea" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="icedteaCheckbox" class="check"> Classic Bottomless Iced Tea - ₱100 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity6">
+                                                            <p id="text20" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity6" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Iced Coffee-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="icedCheckbox" value="Icedcoffee" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="icedCheckbox" class="check">Iced Coffee - ₱185 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity7">
+                                                            <p id="text21" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity7" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--The GrandBerry Smoothie-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="smoothieCheckbox" value="GrandBerrySmoothie" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="smoothieCheckbox" class="check">The GrandBerry Smoothie - ₱165 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity8">
+                                                            <p id="text22" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity8" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Classic Soda Choice-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="sodaCheckbox" value="Soda" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="sodaCheckbox" class="check">Classic Soda Choice - ₱50 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity9">
+                                                            <p id="text23" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity9" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Dragon Drink-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="dragonCheckbox" value="DragonDrink" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="dragonCheckbox" class="check">Dragon Drink - ₱180 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity10">
+                                                            <p id="text24" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity10" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--The OG OJ-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="OGCheckbox" value="OGOJ" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="OGCheckbox" class="check">The OG OJ - ₱70 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity11">
+                                                            <p id="text25" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity11" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Drink In Pink-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="pinkCheckbox" value="pink" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="pinkCheckbox" class="check">Drink In Pink - ₱100 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity12">
+                                                            <p id="text26" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity12" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="row" style="margin: 10px 0 0 0; font-weight: bold; font-size: 25px; text-decoration: underline;"> SANDWICHES</div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <!--Döner Kebab Sandwich-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S1Checkbox" value="Kebab" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S1Checkbox" class="check"> Döner Kebab Sandwich - ₱250 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity13">
+                                                            <p id="text27" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity13" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--The Steak-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S2Checkbox" value="TheSteak" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S2Checkbox" class="check"> The Steak - ₱350 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity14">
+                                                            <p id="text28" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity14" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--The Sando Katsu-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S3Checkbox" value="TheSandoKatsu" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S3Checkbox" class="check"> The Sando Katsu - ₱150 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity15">
+                                                            <p id="text29" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity15" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Criple Seafood Combi Roll-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S4Checkbox" value="Seafood" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S4Checkbox" class="check"> Triple Seafood Combi Roll - ₱300 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity16">
+                                                            <p id="text30" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity16" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Classic BLT-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S5Checkbox" value="BLT" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S5Checkbox" class="check"> Classic BLT - ₱150 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity17">
+                                                            <p id="text31" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity17" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--The Ham Triple Decker-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S6Checkbox" value="Ham" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S6Checkbox" class="check"> The Ham Triple Decker - ₱380 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity18">
+                                                            <p id="text32" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity18" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Waffle Sandwich w/ Cecina,Avocado & Arugula-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S7Checkbox" value="Waffle" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S7Checkbox" class="check"> Waffle Sandwich w/ Cecina, Avocado & Arugula - ₱280 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity19">
+                                                            <p id="text33" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity19" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Toasted Bread of Eggs,Shrimp and Tomatoes-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S8Checkbox" value="Toasted" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S8Checkbox" class="check"> Toasted Bread of Eggs, Shrimp and Tomatoes - ₱150 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity20">
+                                                            <p id="text34" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity20" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Picchiapò-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S9Checkbox" value="Picchiapò" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S9Checkbox" class="check"> Picchiapò - ₱180 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity21">
+                                                            <p id="text35" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity21" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <!--Softshell Crab Sandwich with Collard Slaw-->
+                                                    <div class="col-8">
+                                                        <input type="checkbox" id="S10Checkbox" value="Crab" onclick="displayQtyInput(this)" style="margin-left: 50px; font-size: 23px; margin-right: 10px; width: 20px; height: 20px">
+                                                        <label for="S10Checkbox" class="check"> Soft shell Crab Sandwich with Collard Slaw - ₱300 </label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="quantity22">
+                                                            <p id="text36" style="display:none"> Quantity:
+                                                                <input type="number" min="1" max="1000" step="1" value="0" id="quantity22" class=" stylecheck"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END OF MENU -->
+
+                                <!--SPECIAL INSTRUCTIONS-->
+                                <div class="row mt-3 mx-4">
+                                    <div class="row">
+                                        <label class="order-form-label" id="title3" style="background-color: #6b705c; color: #ffe8d6; text-align: center; margin-top: 0px; margin-bottom: 15px; font-family: 'Lobster', cursive; font-size:30px; font-weight: normal">Additional Instructions & Mode of Payment</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="order-form-label">Special instructions <i>(additional)</i></label>
+                                    </div>
+                                    <div class="col-12 ">
+                                        <textarea class="order-form-input " placeholder="Write something.. " id="instruction" style="height:100px; box-shadow: -5px 5px #6b705c;"></textarea>
+                                    </div>
+                                </div>
+
+                                <!--MODE OF PAYMENT-->
+                                <div class="row mt-3 mx-4">
+                                    <div class="col-12">
+                                        <label class="order-form-label">Mode of Payment</label>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="validation" id="Cash" value="Cash" style="margin-left: 10px;">
+                                            <label for="validation" class="form-check-label">Cash</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="validation" id="CreditCard" value="Credit Card" style="margin-left: 10px;">
+                                            <label for="validation" class="form-check-label">Credit Card</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--SUBMIT BUTTON-->
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-light d-block mx-auto btn-submit grow" onclick="processOrder ()" id="submitBtn">SUBMIT</button>
+                                        <br>
+                                    </div>
+                                </div>
+                                <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer class="footer text-faded text-center py-5 ">
+                <div class="container ">
+                    <p class="m-0 small ">©2021 Copyright Vitaly-Tea. All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- POP UP RECEIPT -->
+        <div class="modal fade design-modal " id="myForm" tabindex="-1 " role="dialog " style="min-width: 350px">
+            <div class="modal-dialog " role="document ">
+                <div class="modal-content design-modal-bg">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="legend-modal-label ">Order Receipt:</h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p style="font-weight: bold ">Order #: <span id="OR" style="font-style: italic; font-weight: bold; border: 2px solid rgb(255, 255, 255); padding: 5px; "></span></p>
+                                    <p style="font-weight: bold ">Customer Name: <span id="receiptName" style="font-style: italic; font-weight: bold; border-bottom: 2px solid rgb(255, 255, 255); padding-bottom: 0px; "></span></p>
+                                    <p style="font-weight: bold; ">Contact no.: <span id="receiptContact" style="font-style: italic; font-weight: bold; border-bottom: 2px solid rgb(255, 255, 255); padding-bottom: 0px; "></span></p>
+                                    <br>
+                                    <div>
+                                        <strong><p class = "m-0 " style = "font-size: 20px; margin-bottom: 20px; ">ORDERS:</p></strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Labels -->
+                            <div class="row pe-4" style="font-weight: bold; color: #ffe8d6; ">
+                                <hr class="m-0 ">
+                                <div class="row ">
+                                    <div class="col-6 pe-0 ">
+                                        Item
+                                    </div>
+                                    <div class="col-4 p-0 ">
+                                        Quantity
+                                    </div>
+                                    <div class="col-2 p-0 ">
+                                        Total
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <!-- Orders -->
+                            <div class="row " style="color: #ffe8d6; max-height: 350px; overflow-y: scroll" id="ordersDiv">
+                                <!-- Appended orders will be inserted here. -->
+                            </div>
+
+                            <!-- MOP -->
+                            <div class="row mt-4 " style="color: #ffe8d6; margin-bottom: 2px; ">
+                                <hr>
+                                <div class="row ">
+                                    <div class="col-5 ">
+                                        <p style="font-style: italic; font-weight: bold ">Special Instruction: </p>
+                                    </div>
+                                    <div class="col-3">
+                                        <span id="receiptinstruction" style="font-weight: normal "></span>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-5">
+                                        <p style="font-style: italic; font-weight: bold ">Mode of Payment: </p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p id="MOP"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Total -->
+                                    <div class="col-5">
+                                        <p style="font-weight: bold">Total Amount</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p id="receiptTotal" style="font-weight: bold; color: white">0</p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="row mt-4">
+                                <center><button type="button" class="button-design-modal grow" class="close modal-exit-btn" data-dismiss="modal" aria-label="Close" onclick="$( '#myForm').modal ( 'hide'); "><b>Confirm</b></button></center>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--DO NOT REMOVE. THIS IS FOR NAVBAR-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js " integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js " integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ " crossorigin="anonymous "></script>
+</body>
+
+</html>

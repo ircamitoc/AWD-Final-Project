@@ -1,0 +1,140 @@
+/*MAIN CSS*/
+
+
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Lobster&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/*Code to change color of active link*/
+
+.navbar-item>.active>a {
+    color: rgb(55, 146, 55);
+}
+
+.active {
+    font-weight: bold;
+}
+
+body {
+    background-color: #ffe8d6;
+    color: #6b705c;
+}
+
+.navbar-custom {
+    background-color: #a5a58d;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.button-design {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+.button-design:hover {
+    background-color: #ffe8d6;
+    color: #a5a58d;
+    border: 2px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*CONTACT & ABOUT CSS*/
+
+.page-font {
+    font-family: 'Castoro', serif;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#myBtn {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+#ok {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+    margin-left: 110px;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.btn-submit:hover {
+    background-color: #444444 !important;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-30deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+#MAIN {
+    animation: transitionIn 0.95s;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+    }
+}
+
+.container img:hover {
+    animation: shadow-pulse 1.25s;
+}

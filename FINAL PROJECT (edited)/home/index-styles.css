@@ -1,0 +1,363 @@
+/*MAIN CSS*/
+
+
+/*FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&family=Lobster&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap');
+
+/*Code to change color of active link*/
+
+.navbar-item>.active>a {
+    color: rgb(55, 146, 55);
+}
+
+.active {
+    font-weight: bold;
+}
+
+body {
+    background-color: #ffe8d6;
+    color: #6b705c;
+}
+
+.navbar-custom {
+    background-color: #a5a58d;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.button-design {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+.button-design:hover {
+    background-color: #ffe8d6;
+    color: #a5a58d;
+    border: 2px solid white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*ORDER FORM CSS*/
+
+.order-form .container {
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+}
+
+.order-form-label {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.order-form-input {
+    width: 100%;
+    padding: 8px 8px;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-radius: 3px !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: #ffffff;
+    border-color: #cccccc;
+    color: black;
+}
+
+.btn-submit:hover {
+    background-color: #6b705c!important;
+}
+
+#date {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.page-font {
+    font-family: 'Castoro', serif;
+}
+
+
+/*ABOUT CSS*/
+
+
+/*CONTACT CSS*/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#myBtn {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+}
+
+#ok {
+    background-color: #a5a58d;
+    width: 130px;
+    height: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: white;
+    padding: 0px;
+    border: none;
+    margin-left: 110px;
+}
+
+
+/*INDEX/HOME CSS*/
+
+.posters img {
+    width: 380px;
+    height: 550px;
+    padding-left: 10%;
+}
+
+.info img {
+    width: 280px;
+    height: 280px;
+    margin-left: 13%;
+}
+
+.info h5 {
+    padding-top: 8%;
+    text-align: center;
+}
+
+.fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.poster {
+    position: relative;
+    margin-top: 30px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .80);
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.64s ease-in-out;
+}
+
+.popup_inner {
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    max-height: 600px;
+    width: 60%;
+    height: 80%;
+    background-color: #FFE8DA;
+    transform: rotate(32deg);
+    transition: 0.64s ease-in-out;
+}
+
+.close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #0a0a0a;
+    z-index: 4;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup:target .popup_inner {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-40px);
+        transform: translateY(-40px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.poster:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-30deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+#MAIN {
+    animation: transitionIn 0.75s;
+}
+/*MENU CSS*/
+
+
+/*SERVICES CSS*/
